@@ -1,33 +1,57 @@
-# DAMHS – Automatisiertes Materialhandlingsystem
+# Digitalization & Automation of Material Handling Systems (DAMHS)
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Focus-Automation-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Methods-Simulation%20%7C%20Layout%20Design%20%7C%20Sensors-lightgrey?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/focus-automation-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/methods-simulation%20%7C%20layout%20design%20%7C%20sensors-lightgrey?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/license-mit-brightgreen?style=for-the-badge" />
 </p>
 
-Design & evaluation of an automated material handling system: conveyors, diverters, buffer logic, sensors/cameras, 
-and performance analysis (throughput, utilization, reliability).
+Design & evaluation of an automated material handling system for a post-processing line.  
+Focused on **conveyors, diverters, buffers, sensors/cameras, and KPI-driven simulation**.  
+Target: **90 bars/hour throughput** with improved reliability.  
 
 ---
 
-## ⭐ STAR Summary
-- **Situation:** The post-processing line required an automated handling solution to reach ~**90 bars/hour** while avoiding 100% utilization at bottlenecks.
-- **Task:** Select components (conveyors/diverters/sensors), develop alternative layouts, and quantify throughput, utilization, and buffers.
-- **Action:** Built/evaluated multiple layouts; computed machine counts & waiting elements; positioned sensors & vision checks; compared reliability and power/length estimates.
-- **Result:** **Target throughput achieved** via optimized layout and buffer sizing; improved reliability by keeping critical stations below full utilization.
+## ⭐ Project Summary (STAR)
+
+**A) Situation**  
+Post-processing line required higher throughput but suffered from bottlenecks at critical stations.  
+
+**B) Task**  
+Design an automated material handling system with conveyors, diverters, and sensors that ensures ~90 bars/hour without overloading machines.  
+
+**C) Action**  
+- Modeled multiple alternative layouts and simulated performance.  
+- Selected conveyors, diverters, and accumulators; integrated sensors & camera checks.  
+- Evaluated throughput, utilization, and waiting elements; optimized buffer sizes.  
+
+**D) Result**  
+- Achieved **90 bars/hour** throughput.  
+- Reduced machine overload by balancing utilization.  
+- Delivered a scalable, reliable automation concept for manufacturing.  
 
 ---
 
-## 🖼️ Highlights
-![Final Layout](docs/figures/layout-final.png)
-![Utilization Table](docs/figures/utilization-table.png)
+## 🖼️ Key Figures
+
+### 1. System Layout  
+![System Layout](docs/figures/01_SystemLayout.png)  
+*Final post-processing layout with central conveyor and buffer zones.*  
+
+### 2. Handling Components  
+![Components](docs/figures/02_MaterialHandling_Components.png)  
+*Selected conveyors, diverters, and sensors for automated handling.*  
+
+### 3. KPI – Throughput Target  
+![KPI Throughput](docs/figures/03_Throughput_Target_90ph.png)  
+*Simulation results validating throughput target of 90 bars/hour.*  
 
 ---
 
-## 📂 Repository Map
-- `docs/reports/` – sanitized PDF
-- `docs/figures/` – layout and KPI charts
-- `docs/artifacts/` – throughput/utilization CSVs
-- `src/` – (optional) small calculators/scripts
-- `LICENSE` – MIT
+## 📑 Report  
+[📥 Download Full Report (PDF)](docs/reports/DAMHS_Final.pdf)  
+
+---
+
+## 📂 Repository Structure  
+
