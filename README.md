@@ -2,56 +2,71 @@
 
 <p align="left">
   <img src="https://img.shields.io/badge/focus-automation-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/methods-simulation%20%7C%20layout%20design%20%7C%20sensors-lightgrey?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/license-mit-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/methods-layout%20design%20%7C%20sensors%20%7C%20buffers-lightgrey?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/results-90%20bars%2Fhour-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge" />
 </p>
 
-Design & evaluation of an automated material handling system for a post-processing line.  
-Focused on **conveyors, diverters, buffers, sensors/cameras, and KPI-driven simulation**.  
-Target: **90 bars/hour throughput** with improved reliability.  
+**One-liner:** Concept, sizing, and evaluation of an automated material handling system with layout alternatives, sensors, buffers, and KPI-driven throughput analysis.
 
 ---
 
-## ⭐ Project Summary (STAR)
+## ⭐ STAR Summary
 
-**A) Situation**  
-Post-processing line required higher throughput but suffered from bottlenecks at critical stations.  
+**Situation**  
+The post-processing line required higher, stable throughput while avoiding overload at critical stations.
 
-**B) Task**  
-Design an automated material handling system with conveyors, diverters, and sensors that ensures ~90 bars/hour without overloading machines.  
+**Task**  
+Design an automated material handling concept that reaches ~**90 bars/hour** and improves flow reliability via the right combination of conveyors, diverters, sensors, and buffer sizing.
 
-**C) Action**  
-- Modeled multiple alternative layouts and simulated performance.  
-- Selected conveyors, diverters, and accumulators; integrated sensors & camera checks.  
-- Evaluated throughput, utilization, and waiting elements; optimized buffer sizes.  
+**Action**  
+- Developed and compared multiple layout alternatives (flow paths, merge/divert logic).  
+- Selected handling components (conveyors, diverters, accumulators) and placed sensors/inspection points.  
+- Calculated machine counts, waiting elements, and buffer capacities; analyzed utilization and throughput.  
 
-**D) Result**  
-- Achieved **90 bars/hour** throughput.  
-- Reduced machine overload by balancing utilization.  
-- Delivered a scalable, reliable automation concept for manufacturing.  
-
----
-
-## 🖼️ Key Figures
-
-### 1. System Layout  
-![System Layout](docs/figures/01_SystemLayout.png)  
-*Final post-processing layout with central conveyor and buffer zones.*  
-
-### 2. Handling Components  
-![Components](docs/figures/02_MaterialHandling_Components.png)  
-*Selected conveyors, diverters, and sensors for automated handling.*  
-
-### 3. KPI – Throughput Target  
-![KPI Throughput](docs/figures/03_Throughput_Target_90ph.png)  
-*Simulation results validating throughput target of 90 bars/hour.*  
+**Result**  
+- **Target throughput (~90 bars/hour) achieved** in the selected concept.  
+- Reduced risk of bottlenecks by keeping critical machines below 100% utilization.  
+- Clear sizing rules for equipment and buffers to support reliable operation.
 
 ---
 
-## 📑 Report  
-[📥 Download Full Report (PDF)](docs/reports/DAMHS_Final.pdf)  
+## 📐 System Design & Architecture
+
+<p align="center">
+  <img src="docs/figures/01_SystemLayout.png" width="760">
+  <br>
+  <em>Figure 1: Final system layout with main stations, central conveyor, and buffer zones</em>
+</p>
+
+<p align="center">
+  <img src="docs/figures/02_HandlingSubsystems.png" width="760">
+  <br>
+  <em>Figure 2: Handling Subsystems — Layout 1 illustrating diverters, conveyors, and buffers for automated material flow</em>
+</p>
 
 ---
 
-## 📂 Repository Structure  
+## 📊 Engineering Calculations
+
+<p align="center">
+  <img src="docs/figures/03_PowerCalculations.png" width="760">
+  <br>
+  <em>Figure 3: ⚡ Power Calculations — Dimensioning of conveyors, accumulators, and diverters performed in SMath Studio</em>
+</p>
+
+Key takeaways:  
+- System throughput validated at ~90 bars/hour.  
+- Buffer capacity sized to stabilize flow and reduce machine overload.  
+- Power requirements calculated for conveyors, accumulators, and diverters to confirm feasibility.
+
+---
+
+## 📑 Report (PDF)
+
+- [📥 Download Full Report (PDF)](docs/reports/DAMHS_Final.pdf)
+
+---
+
+## 📂 Repository Structure
 
